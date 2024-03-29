@@ -3,10 +3,6 @@ package com.zaninweb.course.entities;
 import java.io.Serializable;
 import java.util.ArrayList;
 import java.util.List;
-<<<<<<< HEAD
-=======
-import java.util.Objects;
->>>>>>> 0e476dc0fb346a255d03dbc2d9f06d1f58f7b235
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
@@ -29,22 +25,12 @@ public class User implements Serializable {
 	private String email;
 	private String phone;
 	private String password;
-<<<<<<< HEAD
 	
 	@JsonIgnore
 	@OneToMany(mappedBy = "client")
 	private List<Order> orders = new ArrayList<>();
 	
 	public User() {
-=======
-
-	@JsonIgnore
-	@OneToMany(mappedBy = "client")
-	private List<Order> orders = new ArrayList<>();
-
-	public User() {
-
->>>>>>> 0e476dc0fb346a255d03dbc2d9f06d1f58f7b235
 	}
 
 	public User(Long id, String name, String email, String phone, String password) {
@@ -96,18 +82,11 @@ public class User implements Serializable {
 		this.password = password;
 	}
 
-<<<<<<< HEAD
 
 	public List<Order> getOrders() {
 		return orders;
 	}
 	
-=======
-	public List<Order> getOrders() {
-		return orders;
-	}
-
->>>>>>> 0e476dc0fb346a255d03dbc2d9f06d1f58f7b235
 	@Override
 	public int hashCode() {
 		final int prime = 31;
@@ -132,9 +111,4 @@ public class User implements Serializable {
 			return false;
 		return true;
 	}
-<<<<<<< HEAD
 }
-=======
-
-}
->>>>>>> 0e476dc0fb346a255d03dbc2d9f06d1f58f7b235
